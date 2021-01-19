@@ -3,9 +3,9 @@
   <%= @question %>
   <footer class="blockquote-footer">You</footer>
 </blockquote>
-<blockquote style="background:#eff7e1">
+<blockquote class="coach-answer">
   <%= @answer %>
   <footer class="blockquote-footer">Coach</footer>
 </blockquote>
 
-<%= link_to "Ask another question", ask_path %>
+<%= button_to "Ask another question", ask_path, :class => "btn btn-primary", :method => :get %>
