@@ -1,15 +1,19 @@
 <h1>Stupid Coaching</h1>
-<h3>Ask Coach a question!</h3>
+<%
+=begin%>
+ <h3>Ask Coach a question!</h3> 
+<%
+=end%>
 
 <div class="row">
   <div class="col-12 col-md-6">
-  <form action="/answer">
-    <div class="w-50 input-group">
-      <input class="form-control" type="text" name="question" id="question">
-      <div class="input-group-btn">
-        <input class="btn btn-primary" type="submit" value="Ask">
+  <form class="form" action="/answer">
+      <div class="input-group">
+        <input class="form-control" type="text" name="question" id="question" placeholder="Ask coach anything...">
+        <div class="input-group-append">
+          <input class="btn btn-primary" type="submit" value="Ask">
+        </div>
       </div>
-    </div>
   </form>
   </div>
 </div>
