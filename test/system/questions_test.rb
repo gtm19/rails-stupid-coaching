@@ -10,6 +10,7 @@ class QuestionsTest < ApplicationSystemTestCase
   test "asking question elicits puzzled response from coach" do
     visit ask_url
     fill_in "question", with: "Who are you?"
+    take_screenshot
     click_on "Ask"
 
     assert_selector "blockquote.coach-answer", text: "Silly question, get dressed and go to work!"
